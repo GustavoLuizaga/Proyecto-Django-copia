@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create new Task</title>
+</head>
+<body>
+<h1> Create task</h1>
+
+<form method="post" action='/processForm/'>
+    {% csrf_token %}
+    <label>Title</label> <input type="text" id="i1" name="i1" value=""> <br> <br>
+    <label>Description</label> <br> <textarea name="txt1" id="txt1" cols="30" rows="10"></textarea> <br>
+    <button type="submit">Save</button>
+    <label>Projects :</label>
+
+    <select name="projects" id="projects">
+    {% for project  in projects %}
+        <option >{{project.name}}</option>
+
+    {% endfor %}
+    </select>
+</form>
+
+
+
+</body>
+</html>

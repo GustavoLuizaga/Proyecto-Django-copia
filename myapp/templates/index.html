@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Django</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style/main.css' %}">
+
+</head>
+<body>
+
+<h1>{{title}}</h1>
+<nav>
+    <ul>
+        <li> <a href="http://127.0.0.1:8000/"> Home </a></li>
+        <li> <a href="http://127.0.0.1:8000/tasks/"> Tasks </a></li>
+        <li> <a href="http://127.0.0.1:8000/project/"> Projects </a></li>
+        <li> <a href="/createTasks/"> Create Task </a></li>
+        <li> <a href="/createProject/"> Create Project </a></li>
+
+    </ul>
+</nav>
+
+<img src="{% static 'images.png'%}">
+    <section>
+        <h1>Coding</h1>
+        <h2>Pasion por el codigo</h2>
+        <iframe width="500" height="600" src="https://www.youtube.com/embed/J0xe5DcnYSA" title="Holiday / Boulevard of Broken Dreams" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br>
+        <a href="https://www.bing.com/chat?form=NTPCHB" target="_blank">
+            <button>Copilot</button> <br>
+        </a>
+    </section>
+</body>
+<footer>&copy;Gustavo Luizaga Merino</footer>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+<body>
+
+
+<h1>Projects</h1>
+
+{% for project  in projects %}
+    <h2>{{project.name}}</h2>
+
+{% endfor %}
+
+
+<label>Projects :</label>
+
+<select name="projects" id="projects">
+{% for project  in projects %}
+        <option >{{project.name}}</option>
+
+{% endfor %}
+</select>
+
+</body>
+</html>
